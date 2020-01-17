@@ -26,7 +26,8 @@
     <head>
         <title>Website</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="{% static "css/bootstrap-4.4.1-dist/css/bootstrap.css" %}">
         <link rel="stylesheet" href="{% static "css/app.css" %}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     </head>
@@ -34,15 +35,16 @@
     <body>
         <ul class="nav" id="navbar">
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/">
+                <!-- <i class="material-icons">home</i> -->
                     Home
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Item1</a>
+                <a class="nav-link" href="/resume/">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Item2</a>
+                <a class="nav-link" href="/projects/">Projects</a>
             </li>
         </ul>
     {% block content %}
@@ -53,3 +55,13 @@
 
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
