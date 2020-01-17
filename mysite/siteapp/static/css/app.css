@@ -2,17 +2,41 @@ body {
     background-color: #1A202C;
 }
 
-h1 {
-    text-align: center;
-    color: #EDF2F7;
+.material-icons {
+    /* height: 10px;
+    width: 10px; */
 }
 
 #navbar li a{
     color: #EDF2F7;
     text-decoration: none;
-    
 }
 
 #navbar li a:hover {
     color: #4299E1;
+}
+
+/* Index styles */
+img {
+    height: 24px;
+    width: auto;
+}
+
+img:hover{
+    background: #4299E1;
+}
+
+.profile {
+    text-align: center;
+    color: #EDF2F7;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.profile h1 {
+    text-align: left;
+}
+
+.profile p {
+    text-align: left;
 }
